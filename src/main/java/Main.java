@@ -13,7 +13,12 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        if (doc == null) throw new AssertionError();
         Element element1 = doc.getAllElements().first();
-        System.out.println(element1.toString());
+        int size = element1.getElementsByClass("col2width fl bcol-white carman").size();
+        for(int i=0; i<size; i++){
+            System.out.println(element1.getElementsByClass("col2width fl bcol-white carman").get(i).getAllElements().get(1).attr("title"));
+            System.out.println("#######################################");
+        }
     }
 }

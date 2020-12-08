@@ -18,7 +18,6 @@ public class CarBrands {
         Elements carBrandsElement = HtmlElement.getElementsByClass("col-2 center");
         ArrayList<String> brandList = new ArrayList<>();
         for (Element element : carBrandsElement) {
-            //System.out.println(element.getAllElements().get(1).attr("title"));
             brandList.add(element.getAllElements().get(1).attr("title"));
         }
         return brandList;

@@ -22,9 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4511997-4a6b-44bb-9e8e-87d4cf0a6548" name="Default Changelist" comment="New class, gets brand specific car models">
-      <change beforePath="$PROJECT_DIR$/src/main/java/BrandModels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BrandModels.java" afterDir="false" />
+    <list default="true" id="b4511997-4a6b-44bb-9e8e-87d4cf0a6548" name="Default Changelist" comment="Models also saved into arraylist">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CarBrands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CarBrands.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CarBrands.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CarBrands.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607450284207</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Models also saved into arraylist">
+      <created>1607451237136</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607451237136</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,37 +156,38 @@
     <MESSAGE value="Moved from main to a new class" />
     <MESSAGE value="Changed website, data is saved to arraylist now" />
     <MESSAGE value="New class, gets brand specific car models" />
-    <option name="LAST_COMMIT_MESSAGE" value="New class, gets brand specific car models" />
+    <MESSAGE value="Models also saved into arraylist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Models also saved into arraylist" />
   </component>
   <component name="WindowStateProjectService">
     <state x="640" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1607416171886">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="640" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1600.-120.1600.1170/0.0.1920.1050@0.0.1920.1050" timestamp="1607416171886" />
-    <state width="1732" height="232" key="GridCell.Tab.0.bottom" timestamp="1607450256279">
+    <state width="938" height="232" key="GridCell.Tab.0.bottom" timestamp="1607452673715">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1732" height="232" key="GridCell.Tab.0.bottom/-1600.-120.1600.1170/0.0.1920.1050@0.0.1920.1050" timestamp="1607450256279" />
-    <state width="1732" height="232" key="GridCell.Tab.0.center" timestamp="1607450256279">
+    <state width="938" height="232" key="GridCell.Tab.0.bottom/-1600.-120.1600.1170/0.0.1920.1050@0.0.1920.1050" timestamp="1607452673715" />
+    <state width="938" height="232" key="GridCell.Tab.0.center" timestamp="1607452673715">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1732" height="232" key="GridCell.Tab.0.center/-1600.-120.1600.1170/0.0.1920.1050@0.0.1920.1050" timestamp="1607450256279" />
-    <state width="1732" height="232" key="GridCell.Tab.0.left" timestamp="1607450256279">
+    <state width="938" height="232" key="GridCell.Tab.0.center/-1600.-120.1600.1170/0.0.1920.1050@0.0.1920.1050" timestamp="1607452673715" />
+    <state width="938" height="232" key="GridCell.Tab.0.left" timestamp="1607452673715">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1732" height="232" key="GridCell.Tab.0.left/-1600.-120.1600.1170/0.0.1920.1050@0.0.1920.1050" timestamp="1607450256279" />
-    <state width="1732" height="232" key="GridCell.Tab.0.right" timestamp="1607450256279">
+    <state width="938" height="232" key="GridCell.Tab.0.left/-1600.-120.1600.1170/0.0.1920.1050@0.0.1920.1050" timestamp="1607452673715" />
+    <state width="938" height="232" key="GridCell.Tab.0.right" timestamp="1607452673715">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1732" height="232" key="GridCell.Tab.0.right/-1600.-120.1600.1170/0.0.1920.1050@0.0.1920.1050" timestamp="1607450256279" />
+    <state width="938" height="232" key="GridCell.Tab.0.right/-1600.-120.1600.1170/0.0.1920.1050@0.0.1920.1050" timestamp="1607452673715" />
     <state x="461" y="156" key="SettingsEditor" timestamp="1606833856453">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="156" key="SettingsEditor/-1600.-120.1600.1170/0.0.1920.1050@0.0.1920.1050" timestamp="1606833856453" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1607450289424">
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1607451240141">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2/-1600.-120.1600.1170/0.0.1920.1050@0.0.1920.1050" timestamp="1607450289424" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/-1600.-120.1600.1170/0.0.1920.1050@0.0.1920.1050" timestamp="1607451240141" />
     <state x="777" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607449890887">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

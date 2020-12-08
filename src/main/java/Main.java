@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         Document doc = null;
         try {
-            doc = Jsoup.connect("https://www.autoevolution.com/cars/").get();
+            doc = Jsoup.connect("https://www.cars-data.com/en/car-brands-cars-logos.html").get();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -17,8 +17,6 @@ public class Main {
 
         CarBrands brands = new CarBrands(doc);
 
-        brands.getAllBrands();
-        System.out.println("######");
-        brands.groupBrandsByLetter('T');
+        System.out.println(brands.getAllBrands());
     }
 }

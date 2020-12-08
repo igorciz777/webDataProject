@@ -1,31 +1,38 @@
-import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import java.io.IOException;
+import java.util.ArrayList;
 
 public class CarBrands {
     Document doc;
+    ArrayList<String> brandList;
 
     CarBrands(Document doc){
         this.doc = doc;
+        this.brandList = setBrands();
     }
 
-    public void getAllBrands(){
+    private ArrayList<String> setBrands(){
         Element HtmlElement = doc.getAllElements().first();
-        Elements carBrandsElement = HtmlElement.getElementsByClass("col2width fl bcol-white carman");
+        Elements carBrandsElement = HtmlElement.getElementsByClass("col-2 center");
+        ArrayList<String> brandList = new ArrayList<>();
         for (Element element : carBrandsElement) {
-            System.out.println(element.getAllElements().get(1).attr("title"));
+            //System.out.println(element.getAllElements().get(1).attr("title"));
+            brandList.add(element.getAllElements().get(1).attr("title"));
         }
+        return brandList;
+    }
+    public ArrayList<String> getAllBrands(){
+        return brandList;
     }
     public void groupBrandsByLetter(char x){
-        Element HtmlElement = doc.getAllElements().first();
-        Elements carBrandsElement = HtmlElement.getElementsByClass("col2width fl bcol-white carman");
-        for (Element element : carBrandsElement) {
-            String s = element.getAllElements().get(1).attr("title");
-            if (s.charAt(0) == x) {
-                System.out.println(s);
+        for (String element : brandList) {
+            if(element.toLowerCase().charAt(0) == x){
+                System.out.println(element);
+            }
+            else if(element.toUpperCase().charAt(0) == x){
+                System.out.println(element);
             }
         }
     }

@@ -25,14 +25,14 @@ public class CarBrands {
     public ArrayList<String> getAllBrands(){
         return brandList;
     }
-    public void groupBrandsByLetter(char x){
+
+    public ArrayList<String> groupBrandsByLetter(char x){
+        ArrayList<String> groupedBrands = new ArrayList<>();
         for (String element : brandList) {
-            if(element.toLowerCase().charAt(0) == x){
-                System.out.println(element);
-            }
-            else if(element.toUpperCase().charAt(0) == x){
-                System.out.println(element);
+            if(element.toLowerCase().charAt(0) == x || element.toUpperCase().charAt(0) == x){
+                groupedBrands.add(element);
             }
         }
+        return groupedBrands;
     }
 }

@@ -22,11 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4511997-4a6b-44bb-9e8e-87d4cf0a6548" name="Default Changelist" comment="Added a simple menu (not functional yet)">
+    <list default="true" id="b4511997-4a6b-44bb-9e8e-87d4cf0a6548" name="Default Changelist" comment="Added function to the menu">
+      <change afterPath="$PROJECT_DIR$/src/main/java/SaveToFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CarBrands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CarBrands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CarBrands.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CarBrands.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,13 +44,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="G:\IntelliJ IDEA Community Edition 2020.2.1\plugins\maven\lib\maven3" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="ProjectId" id="1l3fpoU8lEhkQHmBHCxncKUa3fc" />
   <component name="ProjectLevelVcsManager">
@@ -141,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607452924688</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added function to the menu">
+      <created>1607520637799</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607520637799</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,40 +166,7 @@
     <MESSAGE value="New class, gets brand specific car models" />
     <MESSAGE value="Models also saved into arraylist" />
     <MESSAGE value="Added a simple menu (not functional yet)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a simple menu (not functional yet)" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="640" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1607416171886">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="640" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1600.-120.1600.1170/0.0.1920.1050@0.0.1920.1050" timestamp="1607416171886" />
-    <state width="938" height="232" key="GridCell.Tab.0.bottom" timestamp="1607519899889">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="938" height="232" key="GridCell.Tab.0.bottom/-1600.-120.1600.1170/0.0.1920.1050@0.0.1920.1050" timestamp="1607519899889" />
-    <state width="938" height="232" key="GridCell.Tab.0.center" timestamp="1607519899889">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="938" height="232" key="GridCell.Tab.0.center/-1600.-120.1600.1170/0.0.1920.1050@0.0.1920.1050" timestamp="1607519899889" />
-    <state width="938" height="232" key="GridCell.Tab.0.left" timestamp="1607519899889">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="938" height="232" key="GridCell.Tab.0.left/-1600.-120.1600.1170/0.0.1920.1050@0.0.1920.1050" timestamp="1607519899889" />
-    <state width="938" height="232" key="GridCell.Tab.0.right" timestamp="1607519899889">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="938" height="232" key="GridCell.Tab.0.right/-1600.-120.1600.1170/0.0.1920.1050@0.0.1920.1050" timestamp="1607519899889" />
-    <state x="461" y="156" key="SettingsEditor" timestamp="1606833856453">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="461" y="156" key="SettingsEditor/-1600.-120.1600.1170/0.0.1920.1050@0.0.1920.1050" timestamp="1606833856453" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1607452938035">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2/-1600.-120.1600.1170/0.0.1920.1050@0.0.1920.1050" timestamp="1607452938035" />
-    <state x="777" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607449890887">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="777" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1600.-120.1600.1170/0.0.1920.1050@0.0.1920.1050" timestamp="1607449890887" />
+    <MESSAGE value="Added function to the menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added function to the menu" />
   </component>
 </project>

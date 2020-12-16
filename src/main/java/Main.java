@@ -1,7 +1,6 @@
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
-import java.awt.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -67,16 +66,21 @@ public class Main {
             switch(s.nextInt()){
                 case 1:
                     counter = 1;
-                    System.out.println("Select car brand");
-                    for(String brandModel : new BrandModels(brands.get(s.nextInt() - 1)).getModels()){
+                    System.out.println("Select car brand (by index)");
+                    BrandModels brandModels = new BrandModels(brands.get(s.nextInt() - 1));
+                    for(String brandModel : brandModels.getModels()){
                         System.out.println(counter + ": " + brandModel);
                         counter++;
                     }
-                    ModelSubMenu(s);
+                    ModelSubMenu(brandModels, s);
                     break;
                 case 2:
-                    System.out.println("WIP");
-                    //TODO
+                    System.out.println("Enter filename: ");
+                    String filename = s.next();
+                    System.out.println("Enter separator: ");
+                    String separator = s.next();
+                    new SaveToFile(filename).writeToFile(brands, separator);
+                    break;
                 case 3:
                     break;
                 default:
@@ -90,26 +94,29 @@ public class Main {
             BrandSubMenu(brands, s);
         }
     }
-    public static void ModelSubMenu(Scanner s){
+    public static void ModelSubMenu(BrandModels brandModels, Scanner s){
         System.out.println("Choose option:");
         System.out.println("1.Save to file");
         System.out.println("2.Quit program");
         try{
             switch(s.nextInt()){
                 case 1:
-                    System.out.println("WIP");
-                    //TODO
+                    System.out.println("Enter filename: ");
+                    String filename = s.next();
+                    System.out.println("Enter separator: ");
+                    String separator = s.next();
+                    new SaveToFile(filename).writeToFile(brandModels.getModels(), separator);
                     break;
                 case 2:
                     break;
                 default:
                     System.err.println("Number out of range (1-2)");
-                    ModelSubMenu(s);
+                    ModelSubMenu(brandModels, s);
                     break;
             }
         }catch(Exception e){
             System.err.println("Not a number " + e);
-            ModelSubMenu(s);
+            ModelSubMenu(brandModels, s);
         }
     }
 }

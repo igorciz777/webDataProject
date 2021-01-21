@@ -18,8 +18,12 @@ public class BrandModels {
     }
 
     private ArrayList<String> setModelList() {
-        Element HtmlElements = doc.select("section").get(2);
-        Elements modelElements = HtmlElements.getElementsByClass("col-4");
+        Elements HtmlElements = doc.getElementsByClass("models");
+        Elements modelElements = new Elements();
+        for (Element element : HtmlElements) {
+            modelElements.addAll(element.getElementsByClass("col-4"));
+        }
+
         ArrayList<String> modelList = new ArrayList<>();
         for (Element element : modelElements) {
             modelList.add(element.getAllElements().get(1).attr("title"));

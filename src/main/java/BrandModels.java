@@ -23,7 +23,6 @@ public class BrandModels {
         for (Element element : HtmlElements) {
             modelElements.addAll(element.getElementsByClass("col-4"));
         }
-
         ArrayList<String> modelList = new ArrayList<>();
         for (Element element : modelElements) {
             modelList.add(element.getAllElements().get(1).attr("title"));

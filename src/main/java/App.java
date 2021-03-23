@@ -12,23 +12,36 @@ public class App {
         loggedIn = false;
     }
     public void Menu(){
-        System.out.println("Car Database - Web Scraping Project\nChoose option:\n1.Login\n2.Register");
-        switch(s.nextInt()){
-            case 1:
-                System.out.print("Login:");
-                login = s.next();
-                System.out.print("Password:");
-                password = s.next();
-                loggedIn = userDAO.Login(login,password);
-                break;
-            case 2:
-                System.out.print("Login:");
-                login = s.next();
-                System.out.print("Password:");
-                password = s.next();
-                userDAO.Register(login,password);
-                Menu();
-                break;
+        System.out.println("Car Database - Web Scraping Project");
+        if(loggedIn){
+            System.out.println("Choose option:\n1.Write to database\n2.Read from database");
+            switch (s.nextInt()){
+                case 1:
+                    break;
+                case 2:
+                    break;
+            }
+        }
+        else {
+            System.out.println("Choose option:\n1.Login\n2.Register");
+            switch(s.nextInt()){
+                case 1:
+                    System.out.print("Login:");
+                    login = s.next();
+                    System.out.print("Password:");
+                    password = s.next();
+                    loggedIn = userDAO.Login(login,password);
+                    Menu();
+                    break;
+                case 2:
+                    System.out.print("Login:");
+                    login = s.next();
+                    System.out.print("Password:");
+                    password = s.next();
+                    userDAO.Register(login,password);
+                    Menu();
+                    break;
+            }
         }
     }
 }

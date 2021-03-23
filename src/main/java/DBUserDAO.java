@@ -1,7 +1,6 @@
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class DBUserDAO {
     private Connection conn;
@@ -32,9 +31,13 @@ public class DBUserDAO {
     }
     public void Register(String login, String password){
         try{
-            PreparedStatement stmt = conn.prepareStatement("INSERT INTO car_db_users(login,password) VALUES (?,?)");
+            PreparedStatement stmt = conn.prepareStatement("INSERT INTO car_db_users(login,password,date_of_registration) VALUES (?,?,?)");
             stmt.setString(1,login);
             stmt.setString(2,password);
+            LocalDateTime currentDateTime = LocalDateTime.now();
+            currentDateTime.format(DateTimeFormatter.ofPattern("YYYY-MM-DD hh:mm:ss"));
+            Timestamp timestamp = Timestamp.valueOf(currentDateTime);
+            stmt.setTimestamp(3,timestamp);
             stmt.execute();
             System.out.println("User registered!");
         }catch (SQLException e){

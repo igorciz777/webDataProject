@@ -13,7 +13,7 @@ public class BrandModels {
 
     BrandModels(String carBrand) throws IOException {
         this.carBrand = carBrand;
-        this.doc = Jsoup.connect("https://www.cars-data.com/en/" + this.carBrand.toLowerCase().replace(' ', '-')).get();
+        this.doc = Jsoup.connect("https://www.cars-data.com/en/" + this.carBrand.toLowerCase().replace(' ', '-')).ignoreContentType(true).get();
         this.modelList = setModelList();
     }
 

@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args){
         Document doc = null;
         try {
-            doc = Jsoup.connect("https://www.cars-data.com/en/car-brands-cars-logos.html").get();
+            doc = Jsoup.connect("https://www.cars-data.com/en/car-brands-cars-logos.html").ignoreContentType(true).get();
         } catch (IOException e) {
             e.printStackTrace();
         }

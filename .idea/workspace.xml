@@ -22,13 +22,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4511997-4a6b-44bb-9e8e-87d4cf0a6548" name="Default Changelist" comment="Login/Register user">
+    <list default="true" id="b4511997-4a6b-44bb-9e8e-87d4cf0a6548" name="Default Changelist" comment="Recording date of registering new records">
+      <change afterPath="$PROJECT_DIR$/src/main/java/CurrentTimestamp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/resources/db.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BrandModels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BrandModels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CarBrands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CarBrands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DBBrandModelsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DBBrandModelsDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DBCarBrandsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DBCarBrandsDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DBUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DBUserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SaveToFile.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BrandModels.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BrandModels.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CarBrands.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CarBrands.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DBBrandModelsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DBBrandModelsDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DBCarBrandsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DBCarBrandsDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616505879245</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Recording date of registering new records">
+      <created>1616507000352</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1616507000352</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -215,6 +232,7 @@
     <MESSAGE value="Jsoup connection fix" />
     <MESSAGE value="Structure change to be based on database" />
     <MESSAGE value="Login/Register user" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login/Register user" />
+    <MESSAGE value="Recording date of registering new records" />
+    <option name="LAST_COMMIT_MESSAGE" value="Recording date of registering new records" />
   </component>
 </project>

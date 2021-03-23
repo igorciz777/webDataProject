@@ -16,12 +16,12 @@ public class DBUserDAO {
                     System.out.println("Logging in...");
                     return true;
                 }else{
-                    System.out.println("Incorrect password!");
+                    System.err.println("Incorrect password!");
                     return false;
                 }
             }
             else{
-                System.out.println("User not found");
+                System.err.println("User not found");
                 return false;
             }
         }catch(SQLException e){
@@ -34,10 +34,7 @@ public class DBUserDAO {
             PreparedStatement stmt = conn.prepareStatement("INSERT INTO car_db_users(login,password,date_of_registration) VALUES (?,?,?)");
             stmt.setString(1,login);
             stmt.setString(2,password);
-            LocalDateTime currentDateTime = LocalDateTime.now();
-            currentDateTime.format(DateTimeFormatter.ofPattern("YYYY-MM-DD hh:mm:ss"));
-            Timestamp timestamp = Timestamp.valueOf(currentDateTime);
-            stmt.setTimestamp(3,timestamp);
+            stmt.setTimestamp(3,new CurrentTimestamp().getTimestamp());
             stmt.execute();
             System.out.println("User registered!");
         }catch (SQLException e){

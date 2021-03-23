@@ -2,15 +2,21 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.io.IOException;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class CarBrands {
     Document doc;
     ArrayList<String> brandList;
+    private DBCarBrandsDAO carBrandsDAO;
 
     CarBrands(Document doc){
         this.doc = doc;
         this.brandList = setBrands();
+        carBrandsDAO = new DBCarBrandsDAO();
     }
 
     private ArrayList<String> setBrands(){
@@ -22,17 +28,9 @@ public class CarBrands {
         }
         return brandList;
     }
-    public ArrayList<String> getAllBrands(){
-        return brandList;
-    }
-
-    public ArrayList<String> groupBrandsByLetter(char x){
-        ArrayList<String> groupedBrands = new ArrayList<>();
-        for (String element : brandList) {
-            if(element.toLowerCase().charAt(0) == x || element.toUpperCase().charAt(0) == x){
-                groupedBrands.add(element);
-            }
+    public void writeToDatabase() {
+        for (String brandName : brandList) {
+            carBrandsDAO.insertBrand(brandName);
         }
-        return groupedBrands;
     }
 }

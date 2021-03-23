@@ -2,11 +2,12 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException, SQLException {
         Document doc = null;
         try {
             doc = Jsoup.connect("https://www.cars-data.com/en/car-brands-cars-logos.html").ignoreContentType(true).get();
@@ -15,8 +16,7 @@ public class Main {
         }
         if (doc == null) throw new AssertionError();
 
-        CarBrands brands = new CarBrands(doc);
-        App app = new App();
+        App app = new App(doc);
         app.Menu();
     }
 }

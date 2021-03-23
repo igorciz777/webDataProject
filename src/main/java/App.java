@@ -2,103 +2,33 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class App {
-    public static void Menu(CarBrands brands, Scanner s){
-        System.out.println("Car Encyclopedia\nData scraping project");
-        System.out.println("Choose option:");
-        System.out.println("1.View all car brands");
-        System.out.println("2.View brands by letter");
-        try{
-            int counter;
-            switch (s.nextInt()) {
-                case 1 -> {
-                    counter = 1;
-                    for (String carBrand : brands.getAllBrands()) {
-                        System.out.println(counter + ": " + carBrand);
-                        counter++;
-                    }
-                    BrandSubMenu(brands.getAllBrands(), s);
-                }
-                case 2 -> {
-                    System.out.println("Enter letter A-Z: ");
-                    counter = 1;
-                    char x = s.next().charAt(0);
-                    for (String carBrand : brands.groupBrandsByLetter(x)) {
-                        System.out.println(counter + ": " + carBrand);
-                        counter++;
-                    }
-                    BrandSubMenu(brands.groupBrandsByLetter(x), s);
-                }
-                default -> {
-                    System.err.println("Number out of range (1-2)");
-                    Menu(brands, s);
-                }
-            }
-        }catch (Exception e){
-            System.err.println("Not a number " + e);
-            Menu(brands, s);
-        }
+    private Scanner s;
+    private DBUserDAO userDAO;
+    private boolean loggedIn;
+    private String login,password;
+    App(){
+        s = new Scanner(System.in);
+        userDAO = new DBUserDAO();
+        loggedIn = false;
     }
-    public static void BrandSubMenu(ArrayList<String> brands, Scanner s){
-        System.out.println("Choose option:");
-        System.out.println("1.View car models");
-        System.out.println("2.Save to file");
-        System.out.println("3.Quit program");
-        try{
-            int counter;
-            switch(s.nextInt()){
-                case 1:
-                    counter = 1;
-                    System.out.println("Select car brand (by index)");
-                    BrandModels brandModels = new BrandModels(brands.get(s.nextInt() - 1));
-                    for(String brandModel : brandModels.getModels()){
-                        System.out.println(counter + ": " + brandModel);
-                        counter++;
-                    }
-                    ModelSubMenu(brandModels, s);
-                    break;
-                case 2:
-                    System.out.println("Enter filename: ");
-                    String filename = s.next();
-                    System.out.println("Enter separator: ");
-                    String separator = s.next();
-                    new SaveToFile(filename).writeToFile(brands, separator);
-                    break;
-                case 3:
-                    break;
-                default:
-                    System.err.println("Number out of range (1-2)");
-                    BrandSubMenu(brands, s);
-                    break;
-            }
-        }
-        catch(Exception e){
-            System.err.println("Not a number " + e);
-            BrandSubMenu(brands, s);
-        }
-    }
-    public static void ModelSubMenu(BrandModels brandModels, Scanner s){
-        System.out.println("Choose option:");
-        System.out.println("1.Save to file");
-        System.out.println("2.Quit program");
-        try{
-            switch(s.nextInt()){
-                case 1:
-                    System.out.println("Enter filename: ");
-                    String filename = s.next();
-                    System.out.println("Enter separator: ");
-                    String separator = s.next();
-                    new SaveToFile(filename).writeToFile(brandModels.getModels(), separator);
-                    break;
-                case 2:
-                    break;
-                default:
-                    System.err.println("Number out of range (1-2)");
-                    ModelSubMenu(brandModels, s);
-                    break;
-            }
-        }catch(Exception e){
-            System.err.println("Not a number " + e);
-            ModelSubMenu(brandModels, s);
+    public void Menu(){
+        System.out.println("Car Database - Web Scraping Project\nChoose option:\n1.Login\n2.Register");
+        switch(s.nextInt()){
+            case 1:
+                System.out.print("Login:");
+                login = s.next();
+                System.out.print("Password:");
+                password = s.next();
+                loggedIn = userDAO.Login(login,password);
+                break;
+            case 2:
+                System.out.print("Login:");
+                login = s.next();
+                System.out.print("Password:");
+                password = s.next();
+                userDAO.Register(login,password);
+                Menu();
+                break;
         }
     }
 }

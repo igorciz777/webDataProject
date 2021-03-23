@@ -10,7 +10,7 @@ public class DBConnector {
         Connection connection = null;
         try{
             connection = DriverManager.getConnection(URL,USER,null);
-            System.out.println("Connected to database");
+            //System.out.println("Connected to database");
         }catch (SQLException e){
             e.printStackTrace();
         }

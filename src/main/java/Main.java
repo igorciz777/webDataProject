@@ -16,9 +16,7 @@ public class Main {
         if (doc == null) throw new AssertionError();
 
         CarBrands brands = new CarBrands(doc);
-        Scanner s = new Scanner(System.in);
-
-        App.Menu(brands, s);
-        }
-
+        App app = new App();
+        app.Menu();
+    }
 }

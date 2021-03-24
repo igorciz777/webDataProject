@@ -22,12 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4511997-4a6b-44bb-9e8e-87d4cf0a6548" name="Default Changelist" comment="Writing to database function complete">
+    <list default="true" id="b4511997-4a6b-44bb-9e8e-87d4cf0a6548" name="Default Changelist" comment="Reading from database option">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/car_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/resources/car_db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/db.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DBBrandModelsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DBBrandModelsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DBCarBrandsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DBCarBrandsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SaveToFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +199,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616518438992</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Reading from database option">
+      <created>1616580089350</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1616580089350</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Reading from database option">
+      <created>1616580116921</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1616580116921</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,6 +245,7 @@
     <MESSAGE value="Login/Register user" />
     <MESSAGE value="Recording date of registering new records" />
     <MESSAGE value="Writing to database function complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Writing to database function complete" />
+    <MESSAGE value="Reading from database option" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reading from database option" />
   </component>
 </project>

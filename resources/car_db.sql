@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 23 Mar 2021, 13:43
+-- Czas generowania: 24 Mar 2021, 11:15
 -- Wersja serwera: 10.1.37-MariaDB
 -- Wersja PHP: 7.2.12
 
@@ -30,7 +30,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `car_brands` (
   `id_brand` int(11) NOT NULL,
-  `brand_name` varchar(255) COLLATE utf8_bin NOT NULL
+  `brand_name` varchar(255) COLLATE utf8_bin NOT NULL,
+  `date_of_record` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
@@ -42,7 +43,8 @@ CREATE TABLE `car_brands` (
 CREATE TABLE `car_db_users` (
   `id_user` int(11) NOT NULL,
   `login` varchar(255) COLLATE utf8_bin NOT NULL,
-  `password` varchar(255) COLLATE utf8_bin NOT NULL
+  `password` varchar(255) COLLATE utf8_bin NOT NULL,
+  `date_of_registration` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
@@ -54,7 +56,8 @@ CREATE TABLE `car_db_users` (
 CREATE TABLE `car_models` (
   `id_model` int(11) NOT NULL,
   `id_brand` int(11) NOT NULL,
-  `model_name` varchar(255) COLLATE utf8_bin NOT NULL
+  `model_name` varchar(255) COLLATE utf8_bin NOT NULL,
+  `date_of_record` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --

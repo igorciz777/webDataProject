@@ -20,6 +20,18 @@ public class DBCarBrandsDAO {
         }
         return null;
     }
+    public void printAllBrands(){
+        try{
+            PreparedStatement stmt = conn.prepareStatement("SELECT * FROM car_brands;");
+            ResultSet resultSet = stmt.executeQuery();
+            System.out.println("ID  /   Brand name");
+            while(resultSet.next()){
+                System.out.println(resultSet.getInt("id_brand") + " " + resultSet.getString("brand_name"));
+            }
+        }catch(SQLException e){
+                e.printStackTrace();
+        }
+    }
     public void insertBrand(String brand_name){
         try{
             PreparedStatement stmt = conn.prepareStatement("INSERT INTO car_brands(brand_name,date_of_record) VALUES (?,?)");

@@ -22,23 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4511997-4a6b-44bb-9e8e-87d4cf0a6548" name="Default Changelist" comment="Recording date of registering new records">
-      <change afterPath="$PROJECT_DIR$/src/main/java/CurrentTimestamp.java" afterDir="false" />
+    <list default="true" id="b4511997-4a6b-44bb-9e8e-87d4cf0a6548" name="Default Changelist" comment="Writing to database function complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BrandModels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BrandModels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CarBrands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CarBrands.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DBBrandModelsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DBBrandModelsDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DBCarBrandsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DBCarBrandsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DBUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DBUserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SaveToFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BrandModels.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BrandModels.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CarBrands.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CarBrands.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DBBrandModelsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DBBrandModelsDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DBCarBrandsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DBCarBrandsDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SaveToFile.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616507000352</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Writing to database function complete">
+      <created>1616518438992</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1616518438992</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -233,6 +229,7 @@
     <MESSAGE value="Structure change to be based on database" />
     <MESSAGE value="Login/Register user" />
     <MESSAGE value="Recording date of registering new records" />
-    <option name="LAST_COMMIT_MESSAGE" value="Recording date of registering new records" />
+    <MESSAGE value="Writing to database function complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Writing to database function complete" />
   </component>
 </project>

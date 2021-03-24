@@ -18,10 +18,35 @@ public class DBBrandModelsDAO {
             e.printStackTrace();
         }
     }
+    public void printAllModels(){
+        try{
+            PreparedStatement stmt = conn.prepareStatement("SELECT * FROM car_models");
+            ResultSet resultSet = stmt.executeQuery();
+            System.out.println("ID  /   Model name");
+            while(resultSet.next()){
+                System.out.println(resultSet.getInt("id_model") + " " + resultSet.getString("model_name"));
+            }
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
+    }
+    public void printByID(int id){
+        try{
+            PreparedStatement stmt = conn.prepareStatement("SELECT * FROM car_models WHERE id_brand = ?");
+            stmt.setInt(1,id);
+            ResultSet resultSet = stmt.executeQuery();
+            System.out.println("ID  /   Model name");
+            while(resultSet.next()){
+                System.out.println(resultSet.getInt("id_model") + " " + resultSet.getString("model_name"));
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
     public void deleteAllModels(){
         try{
             PreparedStatement stmt = conn.prepareStatement("DELETE FROM car_models");
-            PreparedStatement stmt2 = conn.prepareStatement("ALTER TABLE car_brands AUTO_INCREMENT = 1;");
+            PreparedStatement stmt2 = conn.prepareStatement("ALTER TABLE car_models AUTO_INCREMENT = 1;");
             stmt.execute();
             stmt2.execute();
         }catch (SQLException e){
